@@ -1,3 +1,4 @@
 import Layout from './Layout';
+import Home from './Home'
 
-export { Layout }
+export { Layout, Home }
