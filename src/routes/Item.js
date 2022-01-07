@@ -14,7 +14,7 @@ const Item = (props) => {
   };
 
   const addItem = () => {
-    props.addItem({ item, quantity });
+    props.addItem({ ...item, quantity });
   };
 
   const { name, image, price } = item;
