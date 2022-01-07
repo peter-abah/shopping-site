@@ -1,3 +1,4 @@
+// import images
 import NikeAirZoom from './images/nike-air-zoom.jpg';
 import NikeAirMax from './images/nike-air-max.jpg';
 import NewBalanceRedefine from './images/new-balance-redefine.jpg';
@@ -108,4 +109,8 @@ const data = [
 
 const getItems = () => data;
 
+const getItem = (id) => data.filter((e) => e.id === id)[0];
+
 export default getItems;
+
+export { getItem, getItems };
