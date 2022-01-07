@@ -4,7 +4,7 @@ const NavBar = (props) => {
   const quantity = props.cart.reduce((total, item) => total + item.quantity, 0)
   return (
     <nav>
-      <h1>Tesiv</h1>
+      <h1>Blvck</h1>
 
       <ul>
         <li><Link to="/">Home</Link></li>
