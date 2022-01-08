@@ -30,7 +30,7 @@ const NavBar = (props) => {
         handleClick={handleClick}
       />
       <Link to="/cart">
-        <BagIcon className="text-3xl" /> {quantity}
+        <BagIcon className="!text-4xl" /> {quantity}
       </Link>
     </nav>
   );
