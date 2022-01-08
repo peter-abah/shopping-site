@@ -1,18 +1,50 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-const NavBar = (props) => {
-  const quantity = props.cart.reduce((total, item) => total + item.quantity, 0)
+import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
+
+const NavLinks = ({ quantity }) => {
+  const [isHidden, setHidden] = useState(true);
+
+  const handleClick = () => {
+    setHidden(!isHidden);
+  };
+
+  const links = [
+    { name: 'Home', path: '/home', id: 1 },
+    { name: 'Shop', path: '/shop', id: 0 },
+    { name: `Cart ${quantity}`, path: '/cart', id: 2 },
+  ];
+
   return (
-    <nav className="nav-bar">
-      <h1 className="nav-bar__brand">Blvck</h1>
+    <div>
+      <button onClick={handleClick}>
+        {isHidden ? <MenuIcon className="text-[2rem]" /> : <CloseIcon className="text-[2rem]" />}
+      </button>
 
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/shop">Shop</Link></li>
-        <li><Link to="/cart">Cart {quantity}</Link></li>
+        {links.map(({ name, path, id }) => (
+          <li key={id}>
+            <Link to={path}>
+              {name}
+            </Link>
+          </li>
+        ))}
       </ul>
+    </div>
+  );
+};
+
+const NavBar = (props) => {
+  const quantity = props.cart.reduce((total, item) => total + item.quantity, 0);
+
+  return (
+    <nav className="flex justify-between">
+      <h1 className="nav-bar__brand">Blvck</h1>
+      <NavLinks quantity={quantity} />
     </nav>
-  )
+  );
 };
 
 export default NavBar;
