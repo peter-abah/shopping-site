@@ -10,7 +10,7 @@ const NoItems = () => {
   );
 };
 
-const Cart = ({cart, clearCart}) => {
+const Cart = ({cart, clearCart, removeItem}) => {
   const navigate = useNavigate();
   const totalPrice = cart.reduce(
     (total, item) => total + item.price * item.quantity,
@@ -29,7 +29,7 @@ const Cart = ({cart, clearCart}) => {
       <div className="flex flex-col items-center py-8 px-[7.5vw] text-xl">
         <div className="flex flex-wrap">
           {cart.map((item) => (
-            <CartItem key={item.id} {...item} />
+            <CartItem key={item.id} {...item} removeItem={removeItem}/>
           ))}
         </div>
         <p className="mt-10">Total Price: ${totalPrice}</p>
