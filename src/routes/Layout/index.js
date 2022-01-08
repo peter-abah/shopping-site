@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 
 const Layout = (props) => {
   return (
-    <main>
+    <main className="min-h-screen text-primary bg-secondary">
       <NavBar {...props} />
       <Outlet />
     </main>
