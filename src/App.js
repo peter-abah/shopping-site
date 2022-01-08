@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
-import { Layout, Home, Shop, Item, Cart, ThankYou } from './routes';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import { Layout, Home, Shop, Item, Cart, ThankYou } from "./routes";
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -8,19 +8,19 @@ function App() {
   const getItemQuantityInCart = (id) => {
     const item = cart.filter((item) => item.id === id)[0];
     return item ? item.quantity : 0;
-  }
+  };
 
   const addItem = (item) => {
     const quantity = getItemQuantityInCart(item.id) + item.quantity;
-    item = { ...item, quantity }
+    item = { ...item, quantity };
 
-    const filteredCart = cart.filter(({id}) => id !== item.id);
+    const filteredCart = cart.filter(({ id }) => id !== item.id);
     setCart([...filteredCart, item]);
   };
 
   return (
     <Routes>
-      <Route path="/" element={<Layout cart={cart}/>} >
+      <Route path="/" element={<Layout cart={cart} />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="items/:itemId" element={<Item addItem={addItem} />} />
