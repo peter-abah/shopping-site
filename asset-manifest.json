@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/shopping-site/static/css/main.35d39b3b.css",
-    "main.js": "/shopping-site/static/js/main.c4fa836b.js",
+    "main.css": "/shopping-site/static/css/main.aa15f324.css",
+    "main.js": "/shopping-site/static/js/main.b79ae2fa.js",
     "static/media/nike-skepta.jpg": "/shopping-site/static/media/nike-skepta.d1be8e5ef61a44192cd2.jpg",
     "static/media/nike-air-zoom.jpg": "/shopping-site/static/media/nike-air-zoom.e7d63c9fe36496c332b5.jpg",
     "static/media/nike-zoom.jpg": "/shopping-site/static/media/nike-zoom.a3c3586082a06bc64408.jpg",
@@ -17,11 +17,11 @@
     "static/media/nike-air-force.jpg": "/shopping-site/static/media/nike-air-force.f549055cd031b8db4c45.jpg",
     "static/media/adidas-stan.jpg": "/shopping-site/static/media/adidas-stan.1d51fe7bebbdb53a4516.jpg",
     "index.html": "/shopping-site/index.html",
-    "main.35d39b3b.css.map": "/shopping-site/static/css/main.35d39b3b.css.map",
-    "main.c4fa836b.js.map": "/shopping-site/static/js/main.c4fa836b.js.map"
+    "main.aa15f324.css.map": "/shopping-site/static/css/main.aa15f324.css.map",
+    "main.b79ae2fa.js.map": "/shopping-site/static/js/main.b79ae2fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.35d39b3b.css",
-    "static/js/main.c4fa836b.js"
+    "static/css/main.aa15f324.css",
+    "static/js/main.b79ae2fa.js"
   ]
 }
