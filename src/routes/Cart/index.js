@@ -3,9 +3,9 @@ import CartItem from "./CartItem";
 
 const NoItems = () => {
   return (
-    <div>
-      <p>No items in cart</p>
-      <Link to="/shop">Shop</Link>
+    <div className="flex flex-col items-center py-20 px-[7.5vw]">
+      <h2 className="text-center text-5xl mb-12">No items in cart</h2>
+      <Link className="text-2xl border-b pb-2 px-2" to="/shop">Shop</Link>
     </div>
   );
 };
@@ -27,12 +27,12 @@ const Cart = ({cart, clearCart}) => {
   } else {
     return (
       <div className="flex flex-col items-center py-8 px-[7.5vw] text-xl">
-        <div>
+        <div className="flex flex-wrap">
           {cart.map((item) => (
             <CartItem key={item.id} {...item} />
           ))}
         </div>
-        <p className="mt-10">Total Price: {totalPrice}</p>
+        <p className="mt-10">Total Price: ${totalPrice}</p>
 
         <button
           className="mt-6 px-4 py-2 border border-solid"

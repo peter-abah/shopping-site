@@ -4,7 +4,7 @@ const Item = (props) => {
   const { id, image, name, price } = props;
 
   return (
-    <Link className="w-64 p-8" to={`/items/${id}`}>
+    <Link className="w-64 p-8 hover:scale-105 transition-transform" to={`/items/${id}`}>
       <div>
         <img className="mb-4" src={image} alt="name" width="200" height="200" />
         <h3 className="mb-2 text-lg">{name}</h3>
