@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shopping-site/static/css/main.ec7c8da4.css",
+    "main.js": "/shopping-site/static/js/main.c4fa836b.js",
+    "static/media/nike-skepta.jpg": "/shopping-site/static/media/nike-skepta.d1be8e5ef61a44192cd2.jpg",
+    "static/media/nike-air-zoom.jpg": "/shopping-site/static/media/nike-air-zoom.e7d63c9fe36496c332b5.jpg",
+    "static/media/nike-zoom.jpg": "/shopping-site/static/media/nike-zoom.a3c3586082a06bc64408.jpg",
+    "static/media/nike-lahar.jpg": "/shopping-site/static/media/nike-lahar.24ec0d4bbd0b48370b77.jpg",
+    "static/media/nike-space-hippe.jpg": "/shopping-site/static/media/nike-space-hippe.82078e3fc4d4f29b1ba2.jpg",
+    "static/media/converse.jpg": "/shopping-site/static/media/converse.dc052e5bc9f7b04c7501.jpg",
+    "static/media/nike-ispa.jpg": "/shopping-site/static/media/nike-ispa.b0d60b7db1669f22882f.jpg",
+    "static/media/nike-air-max.jpg": "/shopping-site/static/media/nike-air-max.122ad89db861dbfa6b2c.jpg",
+    "static/media/nike-acg.jpg": "/shopping-site/static/media/nike-acg.5e3303447138b883a9c7.jpg",
+    "static/media/adidas-yeezy.jpg": "/shopping-site/static/media/adidas-yeezy.a114cf2220ed586b9a01.jpg",
+    "static/media/new-balance-redefine.jpg": "/shopping-site/static/media/new-balance-redefine.07793c795ca86e1122ae.jpg",
+    "static/media/new-balance-casablanca.jpg": "/shopping-site/static/media/new-balance-casablanca.f1969dc39e35f3fa38ed.jpg",
+    "static/media/nike-air-force.jpg": "/shopping-site/static/media/nike-air-force.f549055cd031b8db4c45.jpg",
+    "static/media/adidas-stan.jpg": "/shopping-site/static/media/adidas-stan.1d51fe7bebbdb53a4516.jpg",
+    "index.html": "/shopping-site/index.html",
+    "main.ec7c8da4.css.map": "/shopping-site/static/css/main.ec7c8da4.css.map",
+    "main.c4fa836b.js.map": "/shopping-site/static/js/main.c4fa836b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec7c8da4.css",
+    "static/js/main.c4fa836b.js"
+  ]
+}
