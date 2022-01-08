@@ -18,7 +18,7 @@ const NavBar = (props) => {
   return (
     <nav className="flex justify-between py-4 px-[7.5vw]">
       <button>
-        <MenuIcon onClick={handleClick} className="text-3xl" />
+        <MenuIcon onClick={handleClick} className="!text-4xl" />
       </button>
       <h1 className="text-2xl">
         <Link to="/">Blvck</Link>

@@ -12,7 +12,7 @@ const NavLinks = ({ isHidden, handleClick }) => {
       className={`${hiddenClass} px-[7.5vw] py-4 fixed w-screen h-screen bg-secondary top-0 left-0`}
     >
       <button className="block mr-auto" onClick={handleClick}>
-        <CloseIcon className="text-primary text-3xl" />
+        <CloseIcon className="text-primary !text-4xl" />
       </button>
 
       <ul className="flex flex-col justify-center items-center h-full">

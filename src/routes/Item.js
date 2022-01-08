@@ -1,38 +1,37 @@
-import { useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
+import BackIcon from "@mui/icons-material/ArrowBack";
 import { getItem } from "../data";
 
 const Item = (props) => {
-  const [quantity, setQuantity] = useState(1);
-
   const { itemId } = useParams();
   const item = getItem(Number(itemId));
 
-  const changeQuantity = (e) => {
-    const quantity = Number(e.target.value);
-    setQuantity(quantity);
-  };
-
   const addItem = () => {
-    props.addItem({ ...item, quantity });
+    props.addItem({ ...item, quantity: 1 });
   };
 
   const { name, image, price } = item;
   return (
-    <div>
-      <img src={image} alt="name" width="200" height="200" />
-      <h3>{name}</h3>
-      <p>{price}</p>
-      <label>
-        Quantity{" "}
-        <input
-          type="number"
-          min="1"
-          value={quantity}
-          onChange={changeQuantity}
-        />
-      </label>
-      <button onClick={addItem}>Add to Cart</button>
+    <div className="px-[7.5vw] py-10">
+      <Link className="block w-fit mb-6" to="/shop">
+        <BackIcon className="!text-4xl" />
+      </Link>
+      <img
+        className="mx-auto w-4/5 mb-6"
+        src={image}
+        alt="name"
+        width="200"
+        height="200"
+      />
+      <h3 className="mb-4 text-2xl">{name}</h3>
+      <p className="mb-4 text-2xl">Price: ${price}</p>
+      <button
+        className="w-fit text-2xl px-4 py-2 border border-solid"
+        onClick={addItem}
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
