@@ -4,11 +4,11 @@ const Item = (props) => {
   const { id, image, name, price } = props;
 
   return (
-    <Link to={`/items/${id}`}>
+    <Link className="w-64 p-8" to={`/items/${id}`}>
       <div>
-        <img src={image} alt="name" width="200" height="200" />
-        <h3>{name}</h3>
-        <p>{price}</p>
+        <img className="mb-4" src={image} alt="name" width="200" height="200" />
+        <h3 className="mb-2 text-lg">{name}</h3>
+        <p>Price: ${price}</p>
       </div>
     </Link>
   );
