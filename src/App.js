@@ -18,13 +18,17 @@ function App() {
     setCart([...filteredCart, item]);
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   return (
     <Routes>
       <Route path="/" element={<Layout cart={cart} />}>
         <Route index element={<Home />} />
         <Route path="shop" element={<Shop />} />
         <Route path="items/:itemId" element={<Item addItem={addItem} />} />
-        <Route path="cart" element={<Cart cart={cart} />} />
+        <Route path="cart" element={<Cart cart={cart} clearCart={clearCart} />} />
         <Route path="thank-you" element={<ThankYou />} />
         <Route path="*" element={<div>Hello World</div>} />
       </Route>

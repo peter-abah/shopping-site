@@ -18,7 +18,7 @@ const NavLinks = ({ isHidden, handleClick }) => {
       <ul className="flex flex-col justify-center items-center h-full">
         {links.map(({ name, path, id }) => (
           <li className="py-4 text-2xl" key={id}>
-            <Link to={path}>{name}</Link>
+            <Link to={path} onClick={handleClick}>{name}</Link>
           </li>
         ))}
       </ul>
