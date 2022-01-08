@@ -8,6 +8,9 @@ module.exports = {
         secondary: '#121111',
         gray: '#909191',
         primary: '#fafafa',
+      },
+      fontFamily: {
+        sans: ['Open Sans', 'sans-serif'],
       }
     },
   },
